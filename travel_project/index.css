@@ -1,0 +1,60 @@
+
+*{
+margin:0px;
+padding: 0px;
+font-family: 'Roboto', sans-serif;
+}
+.container{
+
+    width: 80%;
+   
+    padding: 25px;
+    margin:auto;
+}
+
+h1,p{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+}
+
+input, textarea{
+    width: 80%;
+    margin:10px 0px;
+    font-size: 14px;
+    border: 1px solid black;
+    padding:5px;
+    outline: none;
+    border-radius: 8px;
+    display: block;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.btn{
+    padding: 4px;
+    color: white;
+    background-color:rgb(102, 102, 221) ;
+    border: 1px solid black;
+    cursor:pointer;
+    font-size: 18px;
+    border-radius: 8px;
+}
+.bg{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.thanks{
+    color:green;
+    font-size: 16px;
+    font-family: 'Libre Baskerville', serif;
+
+}

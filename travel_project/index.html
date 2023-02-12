@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Travel Form</title>
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      
+*{
+margin:0px;
+padding: 0px;
+font-family: 'Roboto', sans-serif;
+}
+.container{
+
+    width: 80%;
+   
+    padding: 25px;
+    margin:auto;
+}
+
+h1,p{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+}
+
+input, textarea{
+    width: 80%;
+    margin:10px 0px;
+    font-size: 14px;
+    border: 1px solid black;
+    padding:5px;
+    outline: none;
+    border-radius: 8px;
+    display: block;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.btn{
+    padding: 4px;
+    color: white;
+    background-color:rgb(102, 102, 221) ;
+    border: 1px solid black;
+    cursor:pointer;
+    font-size: 18px;
+    border-radius: 8px;
+}
+.bg{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.thanks{
+    color:green;
+    font-size: 16px;
+    font-family: 'Libre Baskerville', serif;
+
+}
+    </style>
+  </head>
+  <body>
+    <img src="bg.jpg" alt="bg" class="bg" />
+    <div class="container">
+      <h1>Welcome To My Trip</h1>
+      <p>Enter your Details here</p>
+      
+      <p class="thanks">Your form has been successfully submitted</p>
+
+      <form action="index.php" method="post">
+        <input
+          type="text"
+          name="Name"
+          id="Name"
+          placeholder="Enter your name "
+        />
+        <input type="text" name="Email" id="Email" placeholder="Enter email " />
+        <input type="text" name="Age" id="Age" placeholder="Enter age" />
+        <input
+          type="text"
+          name="Gender"
+          id="Gender"
+          placeholder="Enter gender"
+        />
+        <input
+          type="text"
+          name="Phone"
+          id="Phone"
+          placeholder="Enter you phone number"
+        />
+        <textarea
+          name="description"
+          id="description"
+          cols="30"
+          rows="10"
+          placeholder="Add additional information here"
+        >
+        </textarea>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+ 
+</html>
